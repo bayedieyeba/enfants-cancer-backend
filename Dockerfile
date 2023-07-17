@@ -1,5 +1,5 @@
 # Utiliser l'image officielle Node.js 16.17.0 en tant qu'image de base
-FROM node:14.16.1
+FROM node:alpine
 
 # Définir le répertoire de travail à l'intérieur du conteneur
 WORKDIR /app
