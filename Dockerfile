@@ -7,9 +7,8 @@ WORKDIR /app
 # Copier les fichiers package.json et package-lock.json pour installer les dépendances
 COPY package.json ./
 
-RUN curl -v https://registry.npmjs.com/
 # Installer les dépendances du projet
-RUN npm install
+RUN npm install --force
 
 # Copier tout le code source du projet dans le conteneur
 COPY . .
