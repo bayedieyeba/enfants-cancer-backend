@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Démarrer l'application Node.js
-CMD ["npm","start", "server.js"]
+CMD ["npm","start"]
