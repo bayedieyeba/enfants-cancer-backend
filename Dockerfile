@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Exposer le port utilisé par l'application Node.js (à adapter selon le besoin)
-EXPOSE 3000
+EXPOSE 5000
 
 # Démarrer l'application Node.js
 CMD ["node", "app/server.js"]
