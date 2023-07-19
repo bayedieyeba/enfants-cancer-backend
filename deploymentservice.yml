@@ -15,11 +15,6 @@ spec:
         app: nodeapp 
     spec:
       containers:
-        env:
-          - name: HTTP_PROXY
-            value: null
-          - name: HTTPS_PROXY
-            value: null
       - name: nodeserver
         image: bayedieyeba/nodeapp
         ports:
