@@ -1,4 +1,4 @@
-piVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-deployment
@@ -12,15 +12,14 @@ spec:
   template:
     metadata:
       labels:
-        app: nodeapp 
+        app: nodeapp
     spec:
       containers:
       - name: nodeserver
         image: bayedieyeba/nodeapp
         ports:
         - containerPort: 5000
-        
-        
+
 ---
 
 apiVersion: v1
@@ -29,7 +28,7 @@ metadata:
   name: nodeapp-service
 spec:
   selector:
-    app: nodeapp 
+    app: nodeapp
   type: LoadBalancer
   ports:
   - protocol: TCP
